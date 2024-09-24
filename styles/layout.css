@@ -1,14 +1,23 @@
 #app {
-  display: grid;
-  grid-template-columns: 51.25% 48.75%;
-
-  height: 100vh;
-  overflow: hidden;
+  display: flex;
+  flex-direction: column-reverse;
+  
+  @media  (width >= 80em) {
+    display: grid;
+    grid-template-columns: 51.25% 48.75%;
+    height: 100vh;
+    overflow: hidden;
+  }
 }
 
 main {
-  overflow: auto;
-  padding: 4rem;
+  background-color: #FFF;
+  padding: 1.87em 1.5em 1rem;
+  
+  @media  (width >= 80em) {
+    overflow: auto;
+    padding: 4rem;
+  }
 
   & .main-container {
       max-width: 33rem;
@@ -30,13 +39,19 @@ main {
 
 aside {
   background-color: var(--surface-secondary);
-  padding: 4rem;
+  padding: 2rem 1.5rem 1rem;
+  
+  @media  (width >= 80em) {
+    padding: 4rem;    
+  }
 
   & .aside-container {
       max-width: 31rem;
 
       & > img {
+        @media  (width >= 80em) {
           margin-top: 2rem;
+        }
       }
   }
 
