@@ -22,6 +22,10 @@ main {
   & .main-container {
       max-width: 33rem;
       margin-left: auto;
+
+      @media  (width >= 80em) {
+        margin-inline: auto;
+      }
   }
 
   & .back {
@@ -47,6 +51,10 @@ aside {
 
   & .aside-container {
       max-width: 31rem;
+
+      @media  (width >= 80em) {
+        margin-inline: auto;
+      }
 
       & > img {
         @media  (width >= 80em) {
